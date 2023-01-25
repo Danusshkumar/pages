@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Boilerplate</title>
+    </head>
+    <body>
+        <!-- action attribute in the form is 
+            that what page should it go when user click submit button,
+             ex: index.html or google.com . It will go to the mentioned website 
+             with the data we entered in the form field.
+             We also had to specify by which method we are going to transfer the data.
+             This will be done by method attribute in <form> tag.
+             Normally the encoding type is UTF-8 which is defined in the character set attribute in the <meta> tag.
+             But this encoding type will create some % symbol and some other weird encoding.
+             Inorder to prevent the same, we will set the encoding type as text/plain using enctype attribute
+             -->
+        <form action="mailto:mdanusshkumar@gmail.com" method="post" enctype="text/plain">
+            <input type="text" value="Danusshkumar" name="user name" placeholder="Enter your name" id="name" class="form">
+            <!-- Have a look at the above attributes of input tag.
+                We all know the type attribute which is used to set the type of input
+                value attribute is the value set to that particular field by default
+                name attribute is the one which is used to identify the particular field by JavaScript and inorder to use the 
+                  same to view the data with appropriate name
+                placeholder attribute is used to set the placeholder for the form
+                id attribute is used to identify the particular field by CSS
+                class attribute is also the identifier for particular tag which is used in CSS section.
+            -->
+        </form>
+    </body>
+</html>
